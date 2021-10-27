@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // this is for mysql java connector
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.40'
+    runtime "mysql:mysql-connector-java:5.1.40"
+}
+
+javafx {
+    version = "16"
+    modules = [ 'javafx.controls', 'javafx.fxml']
+}
+
+mainClassName = 'org.openjfx.Main'
