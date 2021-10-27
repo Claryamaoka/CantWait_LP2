@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+<Pane cache="true" cacheHint="SPEED" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: C27D57;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button alignment="CENTER" layoutX="166.0" layoutY="55.0" mnemonicParsing="false" prefHeight="160.0" prefWidth="236.0" text="ALOU ALOU " />
-      <CheckBox layoutX="93.0" layoutY="263.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="263.0" text="CheckBox" />
+      <Pane blendMode="SRC_ATOP" layoutX="450.0" prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #DEB887;" />
+      <Label layoutX="26.0" layoutY="143.0" prefHeight="52.0" prefWidth="259.0" style="-fx-font-size: 36px; -fx-font: Montserrat; -fx-font-weight: 100;" text="OS FAVORITOS" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Verdana Bold" size="55.0" />
+         </font></Label>
+      <TextField depthTest="DISABLE" layoutX="18.0" layoutY="101.0" prefHeight="29.0" prefWidth="378.0" style="-fx-background-radius: 5px;" />
+      <ImageView fitHeight="52.0" fitWidth="348.0" layoutX="40.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/CantWait.png" />
+         </image></ImageView>
    </children>
 </Pane>
