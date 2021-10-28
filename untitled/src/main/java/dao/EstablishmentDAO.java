@@ -19,7 +19,7 @@ public class EstablishmentDAO {
         try{
             String insert = "INSERT INTO establishments( id, name) VALUES (?,?)";
             preparedStatement = (PreparedStatement) connection.prepareStatement(insert);
-            preparedStatement.setString(1, establishment.getId().toString());
+            //preparedStatement.setString(1, establishment.getId().toString());
             preparedStatement.setString(2, establishment.getName());
             preparedStatement.executeUpdate();
             return "success";

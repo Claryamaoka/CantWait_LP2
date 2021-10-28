@@ -11,7 +11,7 @@ public class EstablishmentRepository {
 
     public Establishment getById(Integer id) {
         //chamar comando da DAO que acessa o banco
-        return new Establishment(1, "a", new Address("a", "", "", 1, "", ""), 10);
+        return new Establishment("a", new Address("a", "", "", 1, "", ""), 10,"");
     }
 
     public String save(Establishment establishment) throws SQLException {

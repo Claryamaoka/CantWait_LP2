@@ -2,21 +2,23 @@ package model;
 
 public class Establishment {
 
-    private Integer id;
+    //private Integer id;
     private String name;
     private Address address;
     //private Blob image;
     private Integer waitingTime;
+    private String category;
 
-    public Establishment(Integer id, String name, Address address, Integer waitingTime) {
-        this.id = id;
+    public Establishment(String name, Address address, Integer waitingTime, String category) {
+        //this.id = id;
         this.name = name;
         this.address = address;
         this.waitingTime = waitingTime;
+        this.category = category;
     }
 
-    public Establishment(Integer id, String name) {
-        this.id = id;
+    public Establishment(String name) {
+        //this.id = id;
         this.name = name;
     }
 
@@ -44,11 +46,19 @@ public class Establishment {
         this.waitingTime = waitingTime;
     }
 
-    public Integer getId() {
+    public String getCategory(){ return category;}
+
+    public void setCategory(String category){
+        this.category = category;
+    }
+
+
+   /* public Integer getId() {
         return id;
     }
 
     public void setId(Integer id) {
         this.id = id;
-    }
+    }*/
 }
+

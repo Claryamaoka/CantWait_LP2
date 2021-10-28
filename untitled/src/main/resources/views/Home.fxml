@@ -3,8 +3,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<Pane cache="true" cacheHint="SPEED" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: C27D57;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+<Pane cache="true" cacheHint="SPEED" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: C27D57;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeViewController" >
    <children>
       <Pane blendMode="SRC_ATOP" layoutX="450.0" prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #DEB887;">
          <children>
@@ -31,5 +32,10 @@
          </image>
       </ImageView>
       <Button fx:id="btnFiltros" layoutX="373.0" layoutY="101.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="59.0" style="-fx-background-color: FFFEFE; -fx-border-radius: 10px;" text="Filtros" textFill="#9a9a9a" />
+      <Button fx:id="btnAdicionar" alignment="CENTER" layoutX="403.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnAdicionarClick" prefHeight="5.0" prefWidth="0.0" style="-fx-background-color: C27D57;" text="+">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

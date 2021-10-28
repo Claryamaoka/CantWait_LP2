@@ -41,7 +41,7 @@ public class Base {
     }
 
     public String save() throws SQLException {
-        Establishment establishment = new Establishment(2,"KFC");
+        Establishment establishment = new Establishment("teste");
         return service.save(establishment);
     }
 
