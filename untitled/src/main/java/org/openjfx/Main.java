@@ -22,8 +22,7 @@ public class Main extends Application {
             primaryStage.setTitle("Teste");
             primaryStage.setScene(new Scene(root, 900, 500));
             primaryStage.show();
-            Base controller = new Base();
-            controller.save();
+
 
         }catch (Exception ex){
             System.out.println(ex.toString());

@@ -17,9 +17,11 @@ public class Establishment {
         this.category = category;
     }
 
-    public Establishment(String name) {
+    public Establishment(String name, String category, Integer waitingTime) {
         //this.id = id;
         this.name = name;
+        this.category = category;
+        this.waitingTime = waitingTime;
     }
 
     public String getName() {

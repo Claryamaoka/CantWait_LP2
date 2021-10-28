@@ -17,10 +17,11 @@ public class EstablishmentDAO {
 
     public String save(Establishment establishment) throws SQLException {
         try{
-            String insert = "INSERT INTO establishments( id, name) VALUES (?,?)";
+            String insert = "INSERT INTO establishments(name, category, waiting_time) VALUES (?,?,?)";
             preparedStatement = (PreparedStatement) connection.prepareStatement(insert);
-            //preparedStatement.setString(1, establishment.getId().toString());
-            preparedStatement.setString(2, establishment.getName());
+            preparedStatement.setString(1, establishment.getName());
+            preparedStatement.setString(2, establishment.getCategory());
+            preparedStatement.setString(3, establishment.getWaitingTime().toString());
             preparedStatement.executeUpdate();
             return "success";
 
