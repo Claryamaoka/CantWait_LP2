@@ -1,23 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaveViewController">
+<AnchorPane prefHeight="262.0" prefWidth="600.0" style="-fx-background-color: C27D57;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaveViewController">
    <children>
-      <TextField fx:id="txtNome" layoutX="91.0" layoutY="52.0" />
-      <TextField fx:id="txtCEP" layoutX="91.0" layoutY="99.0" />
-      <TextField fx:id="txtNumero" layoutX="91.0" layoutY="149.0" />
-      <TextField fx:id="txtHrAbertura" layoutX="91.0" layoutY="200.0" />
-      <Button fx:id="btnCadastrar" layoutX="132.0" layoutY="361.0" mnemonicParsing="false" onAction="#onbtnCadastrarClick" text="Cadastrar" />
-      <Label layoutX="91.0" layoutY="35.0" text="Nome" />
-      <Label layoutX="91.0" layoutY="77.0" text="CEP" />
-      <Label layoutX="90.0" layoutY="132.0" text="Número" />
-      <Label layoutX="94.0" layoutY="183.0" text="Horário de abertura" />
-      <Label layoutX="94.0" layoutY="232.0" text="Horário de fechamento" />
-      <TextField fx:id="txTHrFechamento" layoutX="92.0" layoutY="257.0" />
-      <Label layoutX="92.0" layoutY="293.0" text="Categoria" />
-      <TextField fx:id="txtCategoria" layoutX="92.0" layoutY="318.0" />
-      <Label fx:id="lblTeste" layoutX="398.0" layoutY="124.0" text="Label" />
+      <TextField fx:id="txtNome" layoutX="241.0" layoutY="20.0">
+         <padding>
+            <Insets left="200.0" top="1.0" />
+         </padding></TextField>
+      <TextField fx:id="txtCEP" layoutX="241.0" layoutY="50.0">
+         <padding>
+            <Insets left="200.0" top="1.0" />
+         </padding></TextField>
+      <TextField fx:id="txtNumero" layoutX="241.0" layoutY="80.0">
+         <padding>
+            <Insets left="200.0" top="1.0" />
+         </padding></TextField>
+      <TextField fx:id="txtHrAbertura" layoutX="241.0" layoutY="108.0">
+         <padding>
+            <Insets left="200.0" top="1.0" />
+         </padding></TextField>
+      <Button fx:id="btnCadastrar" layoutX="388.0" layoutY="194.0" mnemonicParsing="false" onAction="#onbtnCadastrarClick" prefHeight="53.0" prefWidth="198.0" style="-fx-background-color: C27D57;" text="Cadastrar" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font></Button>
+      <Label layoutX="14.0" layoutY="14.0" text="Nome" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="44.0" text="CEP" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="74.0" text="Número" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="102.0" text="Horário de abertura" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="134.0" text="Horário de fechamento" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="txtHrFechamento" layoutX="241.0" layoutY="140.0">
+         <padding>
+            <Insets left="200.0" top="1.0" />
+         </padding></TextField>
+      <Label layoutX="14.0" layoutY="164.0" text="Categoria" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="txtCategoria" layoutX="241.0" layoutY="170.0">
+         <padding>
+            <Insets left="200.0" top="1.0" />
+         </padding></TextField>
    </children>
 </AnchorPane>
