@@ -40,8 +40,8 @@ public class Base {
         return result.get();
     }
 
-    public String save(String name, String category, Integer waitingTime) throws SQLException {
-        Establishment establishment = new Establishment(name,category,waitingTime);
+    public String save(String name, String category, Integer waitingTime, String hrAbertura, String hrFechamento) throws SQLException {
+        Establishment establishment = new Establishment(name,category,waitingTime, hrAbertura,hrFechamento);
         return service.save(establishment);
     }
 

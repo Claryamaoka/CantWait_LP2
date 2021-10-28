@@ -5,12 +5,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane cache="true" cacheHint="SPEED" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: C27D57;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeViewController" >
+<Pane cache="true" cacheHint="SPEED" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: C27D57;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeViewController">
    <children>
-      <Pane blendMode="SRC_ATOP" layoutX="450.0" prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #DEB887;">
-         <children>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-57.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" />
-         </children></Pane>
       <TextField fx:id="txtPesquisa" depthTest="DISABLE" layoutX="18.0" layoutY="101.0" prefHeight="29.0" prefWidth="333.0" promptText="Pesquisar..." style="-fx-background-radius: 5px;" />
       <ImageView fitHeight="52.0" fitWidth="348.0" layoutX="40.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -21,21 +17,33 @@
             <Image url="@../Images/Favoritos.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="btnOutback" fitHeight="140.0" fitWidth="422.0" layoutX="17.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="btnOutback" fitHeight="134.0" fitWidth="414.0" layoutX="17.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/outback.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="btnMadero" fitHeight="140.0" fitWidth="450.0" layoutX="18.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="btnMadero" fitHeight="134.0" fitWidth="398.0" layoutX="18.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Madero.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnFiltros" layoutX="373.0" layoutY="101.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="59.0" style="-fx-background-color: FFFEFE; -fx-border-radius: 10px;" text="Filtros" textFill="#9a9a9a" />
+      <Button fx:id="btnFiltros" layoutX="366.0" layoutY="101.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="66.0" style="-fx-background-color: FFFEFE; -fx-border-radius: 10px;" text="FILTROS" textFill="#80462a">
+         <font>
+            <Font name="Wingdings" size="12.0" />
+         </font></Button>
       <Button fx:id="btnAdicionar" alignment="CENTER" layoutX="403.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnAdicionarClick" prefHeight="5.0" prefWidth="0.0" style="-fx-background-color: C27D57;" text="+">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Button>
+      <ImageView fitHeight="500.0" fitWidth="450.0" layoutX="450.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/Mapa.png" />
+         </image></ImageView>
+      <ImageView fx:id="btnExpandir" fitHeight="106.0" fitWidth="52.0" layoutX="424.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/copy_183699692%20(1).png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>

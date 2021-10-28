@@ -15,7 +15,6 @@ public class EstablishmentService {
     public String save(Establishment establishment) throws SQLException {
         return repository.save(establishment);
     }
-
     public String update (Integer id)throws SQLException {
         return repository.update(id);
     }
