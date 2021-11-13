@@ -11,6 +11,7 @@ import model.Establishment;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Base {
@@ -40,9 +41,12 @@ public class Base {
         return result.get();
     }
 
-    public String save(String name, String category, Integer waitingTime, String hrAbertura, String hrFechamento) throws SQLException {
-        Establishment establishment = new Establishment(name,category,waitingTime, hrAbertura,hrFechamento);
+    public String save(String name, String category, Integer waitingTime, Integer cep, Integer numero, String login, String senha) throws SQLException {
+        Establishment establishment = new Establishment(name, category, waitingTime, cep, numero, login, senha);
         return service.save(establishment);
+    }
+    public List<Establishment> select(String category) throws SQLException {
+        return service.select(category);
     }
 
     public String update() throws SQLException{

@@ -5,6 +5,7 @@ import model.Address;
 import model.Establishment;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public class EstablishmentRepository {
     EstablishmentDAO dao = new EstablishmentDAO();
@@ -16,6 +17,10 @@ public class EstablishmentRepository {
 
     public String save(Establishment establishment) throws SQLException {
         return dao.save(establishment);
+    }
+
+    public List<Establishment> select(String category) throws SQLException {
+        return dao.select(category);
     }
 
     public String update(Integer id) throws SQLException {

@@ -24,10 +24,10 @@ public class Main extends Application {
             primaryStage.setScene(new Scene(root, 900, 500));
             primaryStage.getIcons().add(new Image(this.getClass().getResourceAsStream("/Images/CantWait.png")));
             primaryStage.show();
-
-
         }catch (Exception ex){
             System.out.println(ex.toString());
         }
+
+
     }
 }
