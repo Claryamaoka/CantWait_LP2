@@ -55,7 +55,12 @@ public class EstablishmentDAO {
 
     public List<Establishment> select(String categoria) throws SQLException {
         try {
-            String query = "SELECT * FROM `establishments` where category = '" + categoria + "'";
+            String query;
+            if (categoria.equals(""))
+                query = "SELECT * FROM `establishments` where category = '" + categoria + "'";
+            else
+                query = "SELECT * FROM `establishments` where category like '%" + categoria + "%'";
+
             preparedStatement = (PreparedStatement) connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery(query);
             List<Establishment> lstRetorno = new ArrayList<>();

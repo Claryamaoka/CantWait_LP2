@@ -22,14 +22,14 @@
             <Image url="@../Images/outback.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="btnMadero" fitHeight="134.0" fitWidth="398.0" layoutX="18.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="btnMadero" fitHeight="134.0" fitWidth="398.0" layoutX="18.0" layoutY="345.0" onMouseClicked="#btnMaderoClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Madero.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnFiltros" layoutX="366.0" layoutY="101.0" mnemonicParsing="false" onAction="#btnFiltroOnClick" prefHeight="29.0" prefWidth="66.0" style="-fx-background-color: FFFEFE; -fx-border-radius: 10px;" text="FILTROS" textFill="#80462a">
+      <Button fx:id="btnFiltros" layoutX="366.0" layoutY="101.0" mnemonicParsing="false" onAction="#btnFiltroOnClick" prefHeight="29.0" prefWidth="66.0" style="-fx-background-color: FFFEFE; -fx-border-radius: 10px;" text="PESQUISAR" textFill="#80462a">
          <font>
-            <Font name="Wingdings" size="12.0" />
+            <Font name="Wingdings" size="9.0" />
          </font></Button>
       <ImageView fitHeight="500.0" fitWidth="450.0" layoutX="450.0" pickOnBounds="true">
          <image>

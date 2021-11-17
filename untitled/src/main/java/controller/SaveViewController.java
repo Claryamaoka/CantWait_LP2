@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class SaveViewController {
+public class SaveViewController extends Base{
     private String name;
     private String category;
     private Integer cep;
@@ -60,8 +60,7 @@ public class SaveViewController {
             validaCampos(mensagemErro);
         } else {
             try {
-                Base controller = new Base();
-                controller.save(name, category, waitingTime, cep, numero, login, senha);
+                save(name, category, waitingTime, cep, numero, login, senha);
                 alertExito();
                 limparCampos();
             } catch (Exception e) {
