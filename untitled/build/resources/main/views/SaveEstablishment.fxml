@@ -36,12 +36,12 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="txtSenha" layoutX="251.0" layoutY="171.0" prefHeight="30.0" prefWidth="450.0" />
       <Label layoutX="464.0" layoutY="50.0" text="Nº" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
       <TextField fx:id="txtNmr" layoutX="500.0" layoutY="50.0" prefHeight="30.0" prefWidth="200.0" />
+      <PasswordField fx:id="txtSenha" layoutX="250.0" layoutY="171.0" prefHeight="30.0" prefWidth="450.0" />
    </children>
 </AnchorPane>
