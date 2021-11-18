@@ -8,9 +8,13 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import model.Establishment;
+import org.junit.Test;
 
 import java.io.IOException;
 import java.sql.SQLException;
+
+import static org.junit.Assert.assertEquals;
 
 public class SaveViewController extends Base{
     private String name;
@@ -90,6 +94,13 @@ public class SaveViewController extends Base{
         txtSenha.setText("");
         txtCategoria.setText("");
         txtWaitingTime.setText("");
+    }
+
+    @Test
+    public void testeInsereEstabelecimento() throws SQLException {
+
+       String test = save("Estabelecimento-teste","teste",120,99999999,999,"estabelecimento-teste","123456");
+       assertEquals(test,"success");
     }
 
 }

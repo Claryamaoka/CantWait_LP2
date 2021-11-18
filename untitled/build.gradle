@@ -8,6 +8,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'junit:junit:4.13.2'
+
     // this is for mysql java connector
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.40'
     runtime "mysql:mysql-connector-java:5.1.40"

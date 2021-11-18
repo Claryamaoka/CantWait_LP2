@@ -1,25 +1,22 @@
 package controller;
 
-import javafx.beans.property.BooleanProperty;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import javafx.stage.Stage;
 import model.Establishment;
+import org.junit.Test;
 
-import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
+
+import static org.junit.Assert.assertEquals;
 
 public class RestauranteViewController extends Base implements Initializable {
 
@@ -187,4 +184,16 @@ public class RestauranteViewController extends Base implements Initializable {
     private void someLabel() {
         this.lblVazio.setVisible(false);
     }
+
+    @Test
+    public void testePesquisa() throws SQLException {
+
+        List<Establishment> testLista = select("outback");
+        Establishment est = new Establishment();
+        est.setCategory("outback");
+        List<Establishment> listTest = select(est.getCategory());
+        assertEquals(testLista,listTest);
+    }
 }
+
+

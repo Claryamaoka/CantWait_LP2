@@ -13,6 +13,7 @@ public class Establishment {
 
 
 
+
     public Establishment(String name, Address address, Integer waitingTime, String category) {
 
         this.name = name;
@@ -31,6 +32,10 @@ public class Establishment {
         this.numero=numero;
         this.login = login;
         this.senha = senha;
+    }
+
+    public Establishment(){
+
     }
 
     public String getName() {
