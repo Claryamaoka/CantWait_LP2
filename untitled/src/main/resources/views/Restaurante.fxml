@@ -5,95 +5,86 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane cache="true" cacheHint="SPEED" focusTraversable="true" maxHeight="500.0" maxWidth="900.0" minHeight="500.0" minWidth="900.0" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: C27D57;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeViewController">
+<Pane cache="true" cacheHint="SPEED" focusTraversable="true" maxHeight="500.0" maxWidth="900.0" minHeight="500.0" minWidth="900.0" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: C27D57;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RestauranteViewController">
    <children>
       <Pane layoutX="450.0" prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #664B38;">
          <children>
-            <Pane layoutX="41.0" layoutY="29.0" prefHeight="69.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+            <Pane fx:id="pane1" layoutX="41.0" layoutY="29.0" prefHeight="69.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 10px;" visible="false">
                <children>
-                  <Label layoutX="14.0" layoutY="15.0" text="RESTAURANTE">
+                  <Label fx:id="lblNome1" layoutX="14.0" layoutY="15.0" text="Shopping Metrópole">
                      <font>
                         <Font size="27.0" />
                      </font></Label>
-                  <Label layoutX="264.0" layoutY="26.0" text="X MINUTOS">
+                  <Label fx:id="lblTempo1" layoutX="269.0" layoutY="43.0" text="120 Minutos" textFill="RED">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
                </children></Pane>
-            <Pane layoutX="41.0" layoutY="120.0" prefHeight="69.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+            <Pane fx:id="pane2" layoutX="41.0" layoutY="120.0" prefHeight="69.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 10px;" visible="false">
                <children>
-                  <Label layoutX="264.0" layoutY="26.0" text="X MINUTOS">
+                  <Label fx:id="lblTempo2" layoutX="274.0" layoutY="43.0" text="50 Minutos">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="14.0" layoutY="15.0" text="RESTAURANTE">
+                  <Label fx:id="lblNome2" layoutX="14.0" layoutY="15.0" text="Golden Square">
                      <font>
                         <Font size="27.0" />
                      </font>
                   </Label>
                </children></Pane>
-            <Pane layoutX="41.0" layoutY="307.0" prefHeight="69.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+            <Pane fx:id="pane3" layoutX="41.0" layoutY="216.0" prefHeight="69.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 10px;" visible="false">
                <children>
-                  <Label layoutX="264.0" layoutY="26.0" text="X MINUTOS">
+                  <Label fx:id="lblTempo3" layoutX="269.0" layoutY="43.0" text="X MINUTOS">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="14.0" layoutY="15.0" text="RESTAURANTE">
+                  <Label fx:id="lblNome3" layoutX="14.0" layoutY="15.0" text="Shopping ABC">
                      <font>
                         <Font size="27.0" />
                      </font>
                   </Label>
                </children></Pane>
-            <Pane layoutX="41.0" layoutY="208.0" prefHeight="69.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+            <Pane fx:id="pane4" layoutX="41.0" layoutY="307.0" prefHeight="69.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 10px;" visible="false">
                <children>
-                  <Label layoutX="264.0" layoutY="26.0" text="X MINUTOS">
+                  <Label fx:id="lblTempo4" layoutX="269.0" layoutY="43.0" text="X MINUTOS">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="14.0" layoutY="15.0" text="RESTAURANTE">
+                  <Label fx:id="lblNome4" layoutX="14.0" layoutY="15.0" text="Shopping SBC Plaza">
                      <font>
                         <Font size="27.0" />
                      </font>
                   </Label>
                </children></Pane>
-            <Pane layoutX="41.0" layoutY="404.0" prefHeight="69.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
-               <children>
-                  <Label layoutX="264.0" layoutY="26.0" text="X MINUTOS">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="14.0" layoutY="15.0" text="RESTAURANTE">
-                     <font>
-                        <Font size="27.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
+            <Label fx:id="lblVazio" layoutX="47.0" layoutY="227.0" text="Não há estabelecimentos" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
          </children></Pane>
       <TextField fx:id="txtPesquisa" depthTest="DISABLE" layoutX="18.0" layoutY="101.0" prefHeight="29.0" prefWidth="333.0" promptText="Pesquisar..." style="-fx-background-radius: 5px;" />
       <ImageView fitHeight="52.0" fitWidth="348.0" layoutX="40.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/CantWait.png" />
          </image></ImageView>
-      <ImageView fx:id="btnOutback" fitHeight="134.0" fitWidth="414.0" layoutX="17.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgOutback" fitHeight="134.0" fitWidth="414.0" layoutX="17.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@../Images/outback.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnFiltros" layoutX="366.0" layoutY="101.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="66.0" style="-fx-background-color: FFFEFE; -fx-border-radius: 10px;" text="FILTROS" textFill="#80462a">
+      <ImageView fx:id="btnMadero" fitHeight="134.0" fitWidth="398.0" layoutX="18.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Images/Madero.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnFiltros" layoutX="366.0" layoutY="101.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="66.0" style="-fx-background-color: FFFEFE; -fx-border-radius: 10px;" text="PESQUISAR" textFill="#80462a">
          <font>
-            <Font name="Wingdings" size="12.0" />
+            <Font name="Wingdings" size="9.0" />
          </font></Button>
-      <Button fx:id="btnAdicionar" alignment="CENTER" layoutX="403.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnAdicionarClick" prefHeight="5.0" prefWidth="0.0" style="-fx-background-color: C27D57;" text="+">
-         <font>
-            <Font name="System Bold Italic" size="18.0" />
-         </font>
-      </Button>
       <ImageView fx:id="btnExpandir" fitHeight="106.0" fitWidth="52.0" layoutX="424.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/copy_183699692%20(1).png" />

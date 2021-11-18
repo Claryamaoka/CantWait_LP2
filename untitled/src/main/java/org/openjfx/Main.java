@@ -20,14 +20,14 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws IOException {
         try {
         Parent root = FXMLLoader.load(getClass().getResource("/views/Home.fxml"));
-            primaryStage.setTitle("Teste");
+            primaryStage.setTitle("Can't Wait");
             primaryStage.setScene(new Scene(root, 900, 500));
             primaryStage.getIcons().add(new Image(this.getClass().getResourceAsStream("/Images/CantWait.png")));
             primaryStage.show();
-
-
         }catch (Exception ex){
             System.out.println(ex.toString());
         }
+
+
     }
 }

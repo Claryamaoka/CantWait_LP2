@@ -2,30 +2,40 @@ package model;
 
 public class Establishment {
 
-    //private Integer id;
     private String name;
     private Address address;
-    //private Blob image;
     private Integer waitingTime;
     private String category;
-    private String hrAbertura;
-    private String hrFecamento;
+    private Integer cep;
+    private Integer numero;
+    private String login;
+    private String senha;
+
+
+
 
     public Establishment(String name, Address address, Integer waitingTime, String category) {
-        //this.id = id;
+
         this.name = name;
         this.address = address;
         this.waitingTime = waitingTime;
         this.category = category;
     }
 
-    public Establishment(String name, String category, Integer waitingTime, String hrAbertura, String hrFechamento) {
+
+    public Establishment(String name, String category, Integer waitingTime, Integer cep, Integer numero, String login, String senha) {
         //this.id = id;
         this.name = name;
         this.category = category;
         this.waitingTime = waitingTime;
-        this.hrAbertura = hrAbertura;
-        this.hrFecamento = hrFechamento;
+        this.cep = cep;
+        this.numero=numero;
+        this.login = login;
+        this.senha = senha;
+    }
+
+    public Establishment(){
+
     }
 
     public String getName() {
@@ -58,25 +68,20 @@ public class Establishment {
         this.category = category;
     }
 
-    public String getHrAbertura(){ return hrAbertura;}
+    public Integer getCep(){return  cep;}
 
-    public void setHrAbertura(String hrAbertura){
-        this.hrAbertura = hrAbertura;
-    }
+    public void setCep(Integer cep){ this.cep = cep;}
 
-    public String getHrFechamento(){ return hrFecamento;}
+    public Integer getNumero(){return  numero;}
 
-    public void setHrFechamento(String hrFechamento){
-        this.hrAbertura = hrFechamento;
-    }
+    public void setNumero(Integer numero){ this.numero = numero;}
 
+    public String getLogin(){return  login;}
 
-   /* public Integer getId() {
-        return id;
-    }
+    public void setLogin(String login){ this.login = login;}
 
-    public void setId(Integer id) {
-        this.id = id;
-    }*/
+    public String getSenha(){return  senha;}
+
+    public void setSenha(String senha){ this.senha = senha;}
 }
 
