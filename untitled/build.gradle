@@ -19,3 +19,13 @@ javafx {
 }
 
 mainClassName = 'org.openjfx.Main'
+
+jar {
+    manifest {
+        attributes "Main-Class": "org.openjfx.Main"
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
