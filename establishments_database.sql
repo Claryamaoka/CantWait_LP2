@@ -9,7 +9,7 @@ CREATE TABLE `establishments` (
   `password` varchar(25) NOT NULL,
   `login` varchar(100) NOT NULL,
   `id` int(11) NOT NULL,
-  `open` tinyint(1) NOT NULL
+  `open` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
